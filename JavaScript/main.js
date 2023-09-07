@@ -39,7 +39,7 @@ const printData=(personaje)=>{
         <div class="contenedor">
         <div class="mostrar">
         <a href="${urls[i]}" class="direc">
-            <img class="card" src="${img[i].thumbnail.path}.${img[i].thumbnail. extension}" alt="${name[i]}>
+            <img class="imagenes" src="${img[i].thumbnail.path}.${img[i].thumbnail. extension}" alt="${name[i]}>
             </a>
            <div class="datos">
             <h2>${name[i]}</h2>

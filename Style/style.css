@@ -9,18 +9,20 @@ body{
     padding: 0%;
 }
 .logo{
+    width: 20%;
     background-color: #fbfbfb;
 }
 i{
     font-size: 20px;
     margin: 10px;
-    color: rgb(231, 13, 13);
+    color: rgb(246, 246, 246);
 }
 .row{
-    background-color: rgba(0, 0, 255, 0.21);
+    background-color: rgba(32, 10, 200, 0.345);
     padding:25px;
     margin: 25px;
     display: flex;
+    border-radius: 0.5em;
     justify-content: center;
     align-items: center;
 }
@@ -35,9 +37,11 @@ i{
     grid-template-columns: repeat(3,1fr);
     text-decoration: none;
 }
-
+.imagenes{
+    width: 25%;
+}
 img{
-    width: 30%;
+    width: 100%;
     padding: 5PX;
     margin: 5PX;
     border-radius: 20px;
@@ -54,8 +58,8 @@ input{
     border: #fff;
     border-radius: 10px;
     color: rgb(255, 249, 249);
-    background-color: rgba(0, 0, 255, 0.258);
-    border-style: none;
+    background: transparent;
+    border-style: solid;
 
     h2{
         color: #fff;
@@ -118,9 +122,57 @@ button::before{
     .mostrar {
         width: auto;
         height: auto;
+        background: #07182e5a;
+        position: relative;
+        display: flex;
         padding: 10px;
         margin: 10px;
-        border-radius: 30px;
-        background: rgba(211, 211, 211, 0.463);
-        box-shadow: rgba(93, 93, 215, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        overflow: hidden;
+        border-radius: 20px;
       }
+      
+      .mostrar h2,img,div,p {
+        z-index: 1;
+        color: white;
+        position: relative;
+        font-size: 15px;
+      }
+      
+      .mostrar::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+        height: 130%;
+        animation: rotBGimg 3s linear infinite;
+        transition: all 0.2s linear;
+      }
+      
+      @keyframes rotBGimg {
+        from {
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .mostrar::after {
+        content: '';
+        position: absolute;
+        background: #07182E;
+        ;
+        inset: 5px;
+        border-radius: 15px;
+      }  
+
+
+
+
+
+      
+      
