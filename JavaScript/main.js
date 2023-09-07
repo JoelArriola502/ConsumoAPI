@@ -63,7 +63,7 @@ const printData=(personaje)=>{
 }
 }
 
-
+HeroesTodos();
 
 
 
